@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="下载安装并配置Android Studio1.首先下载安装Android Studio和android sdk。    点我下载">
+  <meta name="description" content="本文是看完尚硅谷王振国老师Javaweb视频后的技术总结。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android的ROS开发环境搭建(Android+ROS+rosjava+android_core)">
-<meta property="og:url" content="http://example.com/2020/09/25/ROS2/index.html">
+<meta property="og:title" content="javaweb阶段学习总结">
+<meta property="og:url" content="http://example.com/2020/09/25/javaweb-conclude/index.html">
 <meta property="og:site_name" content="Run Blog">
-<meta property="og:description" content="下载安装并配置Android Studio1.首先下载安装Android Studio和android sdk。    点我下载">
+<meta property="og:description" content="本文是看完尚硅谷王振国老师Javaweb视频后的技术总结。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-25T06:50:38.000Z">
-<meta property="article:modified_time" content="2020-09-25T07:25:10.840Z">
+<meta property="article:published_time" content="2020-09-25T07:31:20.000Z">
+<meta property="article:modified_time" content="2020-09-25T09:59:06.476Z">
 <meta property="article:author" content="Tang Run">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/09/25/ROS2/">
+<link rel="canonical" href="http://example.com/2020/09/25/javaweb-conclude/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Android的ROS开发环境搭建(Android+ROS+rosjava+android_core) | Run Blog</title>
+  <title>javaweb阶段学习总结 | Run Blog</title>
   
 
 
@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/25/ROS2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/25/javaweb-conclude/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -174,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Android的ROS开发环境搭建(Android+ROS+rosjava+android_core)
+          javaweb阶段学习总结
         </h1>
 
         <div class="post-meta">
@@ -184,7 +184,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-09-25 15:50:38" itemprop="dateCreated datePublished" datetime="2020-09-25T15:50:38+09:00">2020-09-25</time>
+              <time title="Created: 2020-09-25 16:31:20" itemprop="dateCreated datePublished" datetime="2020-09-25T16:31:20+09:00">2020-09-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -192,7 +192,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ros/" itemprop="url" rel="index"><span itemprop="name">Ros</span></a>
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
                 </span>
             </span>
 
@@ -212,8 +212,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2020/09/25/ROS2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/09/25/ROS2/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/09/25/javaweb-conclude/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/09/25/javaweb-conclude/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -228,55 +228,130 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="下载安装并配置Android-Studio"><a href="#下载安装并配置Android-Studio" class="headerlink" title="下载安装并配置Android Studio"></a>下载安装并配置Android Studio</h2><p>1.首先下载安装Android Studio和android sdk。</p>
-<p>   <a target="_blank" rel="noopener" href="http://www.android-studio.org/index.php/download">点我下载</a></p>
-<a id="more"></a>
-
-<p>2.ROS系统自带的是openjdk。当然，Android开发需要oracle的jdk。</p>
-<p>   <a target="_blank" rel="noopener" href="http://www.cnblogs.com/shihaiming/p/5809553.html">安装jdk8并配置</a></p>
-<p>3.对于64位的系统，需要安装ia-32的包。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ia32-libs</span><br></pre></td></tr></table></figure>
-
-
-
-<p>4.将Android  Studio放到/opt目录下，并配置环境变量。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ echo export PATH&#x3D;\$&#123;PATH&#125;:&#x2F;opt&#x2F;android-studio&#x2F;sdk&#x2F;tools:&#x2F;opt&#x2F;android-studio</span><br><span class="line">&#x2F;sdk&#x2F;platform-tools:&#x2F;opt&#x2F;android-studio&#x2F;bin &gt;&gt; ~&#x2F;.bashrc</span><br><span class="line"></span><br><span class="line">$ echo export ANDROID_HOME&#x3D;&#x2F;opt&#x2F;android-studio&#x2F;sdk &gt;&gt; ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
-
-
-
-<p>5.启动Android SDK Manager。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android</span><br></pre></td></tr></table></figure>
-
-<p>安装Android API 19 / 18 / 17 / 16 /15 / 13 / 10 / 7。为了避免sdk占用太多磁盘空间，可取消勾选system image选项。</p>
-<p>6.启动Android Studio。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">studio.sh</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="给Android-Studio配置ros环境"><a href="#给Android-Studio配置ros环境" class="headerlink" title="给Android Studio配置ros环境"></a>给Android Studio配置ros环境</h2><p>7.安装相关的包。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ros-indigo-catkin ros-indigo-ros ros-indigo-common-msgs</span><br></pre></td></tr></table></figure>
-
-
-
-<p>8.安装Wstool工具。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-wstool</span><br></pre></td></tr></table></figure>
-
-<p>如果该命令无法执行，或等待太久，执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install -U wstool</span><br></pre></td></tr></table></figure>
-
-
-
-<p>9.新建rosjava文件夹，用来下载rosjava的资源。下载后source一下，让该文件夹和ros系统关联起来。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; mkdir -p ~&#x2F;rosjava</span><br><span class="line">&gt; wstool init -j4 ~&#x2F;rosjava&#x2F;src https:&#x2F;&#x2F;raw.github.com&#x2F;rosjava&#x2F;rosjava&#x2F;</span><br><span class="line">hydro&#x2F;rosjava.rosinstall</span><br><span class="line">&gt; source &#x2F;opt&#x2F;ros&#x2F;indigo&#x2F;setup.bash</span><br><span class="line">&gt; cd ~&#x2F;rosjava</span><br><span class="line">&gt; catkin_make</span><br></pre></td></tr></table></figure>
-
-
-
-<p>10.下载android_core并source一下，让该文件夹和rosjava相关联。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; mkdir -p ~&#x2F;android</span><br><span class="line">&gt; wstool init -j4 ~&#x2F;android&#x2F;src https:&#x2F;&#x2F;raw.github.com&#x2F;rosjava&#x2F;rosjava&#x2F;</span><br><span class="line">indigo&#x2F;android_core.rosinstall</span><br><span class="line">&gt; source ~&#x2F;rosjava&#x2F;devel&#x2F;setup.bash</span><br><span class="line">&gt; cd ~&#x2F;android</span><br><span class="line">&gt; catkin_make</span><br></pre></td></tr></table></figure>
-
-
-
-<p>11.该过程中间可能会出现诸多问题，一般是跟系统一些设置有关系，比较好解决。</p>
+        <p>本文是看完尚硅谷王振国老师Javaweb视频后的技术总结。<a id="more"></a></p>
+<h3 id="HTML-部分"><a href="#HTML-部分" class="headerlink" title="HTML 部分"></a>HTML 部分</h3><ol>
+<li>超链接的 target 属性来设置当前页面跳转或跳转到新页面 _self / _blank  超链接去下划线：text-decoration:none; </li>
+<li>使用 colspan 和 rowspan来设置跨列和跨行</li>
+<li>iframe 标签可以设置内嵌窗口</li>
+<li>表单里可以设置隐藏域 input hidden</li>
+<li>标签名选择器，id选择器 #id，class选择器 .class，组合选择器</li>
+</ol>
+<h3 id="后端部分"><a href="#后端部分" class="headerlink" title="后端部分"></a>后端部分</h3><ol>
+<li><p>JavaWeb 三大组件：Servlet，Filter，Listener</p>
+</li>
+<li><p>web.xml 中需配置servlet程序的访问地址 &lt;servlet&gt;及&lt;servlet-mapping&gt;</p>
+</li>
+<li><p>Servlet 的生命周期：</p>
+<ul>
+<li><p>构造器方法 （第一次访问时调用）</p>
+</li>
+<li><p>init初始化方法（第一次访问时调用）</p>
+</li>
+<li><p>service方法（每次访问都会调用）</p>
+</li>
+<li><p>destroy方法 （在web工程停止时调用）</p>
+</li>
+</ul>
+</li>
+<li><p>常见 HTTP 响应码</p>
+<p>200 OK，302 重定向，404 数据不存在，500 服务器内部错误</p>
+</li>
+<li><p>JavaEE 三层架构：Web层，Service业务层，Dao持久层</p>
+</li>
+<li><p>Jsp 主要作用是代替Servlet程序回传 html 页面的数据，本质上是一个Servlet程序。</p>
+</li>
+<li><p>Jsp 四大域对象：pageContext，request，session，application。域对象是可以像Map一样存取数据的对象。</p>
+</li>
+<li><p>EL 表达式：代替 jsp 页面中的<strong>表达式脚本</strong>在 jsp 页面中进行数据的输出。通过pageScope, requestScope, sessionScope, applicationScope 来获取四个特定域中的属性。</p>
+</li>
+<li><p>JSTL 标签库：代替 jsp 页面中的<strong>代码脚本</strong>。</p>
+<ul>
+<li>导入 jar 包，在 jsp 页面使用 taglib 指令引入标签库</li>
+<li>常用的 Core 标签库，prefix=”c”</li>
+</ul>
+</li>
+<li><p>文件的上传步骤</p>
+<ul>
+<li>要有一个 form 标签，method=post</li>
+<li>form 标签的 encType 属性值必须为 multipart/form-data</li>
+<li>在 form 标签中使用 input type=file 添加上传的文件</li>
+<li>编写服务器代码（Servlet）接收，处理上传的数据</li>
+</ul>
+</li>
+<li><p>页面 jsp 动态化</p>
+<ul>
+<li>在 html 页面顶行添加 page 指令</li>
+<li>修改文件后缀名为 .jsp</li>
+<li>搜索替换页面中的 .html 为 .jsp</li>
+</ul>
+</li>
+<li><p>Cookie</p>
+<ul>
+<li>客户端保存键值对，每个Cookie大小不超过 4kb</li>
+<li>setMaxAge()，正数表示在指定的秒数后过期；负数表示浏览器一关就被删除（默认-1）；零表示马上删除</li>
+</ul>
+</li>
+<li><p>Session</p>
+<ul>
+<li><p>通常用来保存用户登录过后的信息</p>
+</li>
+<li><p>Session 默认超时时长为30分钟，可以在 web.xml 中通过 session-config 来配置默认时长</p>
+</li>
+</ul>
+</li>
+<li><p>验证码的实现步骤</p>
+<ul>
+<li>导入谷歌验证码 jar 包 kaptcha</li>
+<li>在 web.xml 中配置用于生成验证码的 Servlet 程序</li>
+<li>在表单中使用 img 标签去显示验证码并使用 &lt;img src=”/kaptcha.jpg”&gt;</li>
+<li>在服务器获取生成的验证码和客户端发过来的验证码比较</li>
+<li>给验证码绑定单击事件，使客户端可以切换验证码</li>
+</ul>
+</li>
+<li><p>Filter 作用：拦截请求，过滤响应。常用于权限检查，日记操作，事务管理等等。</p>
+<ul>
+<li>编写一个类去实现 Filter 接口</li>
+<li>实现过滤方法 doFilter()</li>
+<li>到 web.xml 中配置Filter的拦截路径</li>
+</ul>
+</li>
+<li><p>Filter 的生命周期</p>
+<ul>
+<li>构造器方法 （工程启动时执行）</li>
+<li>init 初始化方法（工程启动时执行）</li>
+<li>doFilter 过滤方法，每次拦截到请求就执行</li>
+<li>destroy 方法，工程停止时执行</li>
+</ul>
+</li>
+<li><p>ThreadLocal 简介</p>
+<ul>
+<li>ThreadLocal 可以为当前线程关联一个数据。(它可以像 Map 一样存取数据，key 为当前线程)</li>
+<li>每一个 ThreadLocal 对象，只能为当前线程关联一个数据，如果要为当前线程关联多个数据，就需要使用多个 ThreadLocal 对象实例。</li>
+<li>每个 ThreadLocal 对象实例定义的时候，一般都是 static 类</li>
+<li>ThreadLocal 中保存数据，在线程销毁后。会由 JVM 虚拟自动释放。</li>
+</ul>
+</li>
+<li><p>使用 Filter 和 ThreadLocal 组合管理事务</p>
+<ul>
+<li>目的是确保所有 dao 操作都在同一个 Connection 连接对象中完成</li>
+<li>使用 Filter 统一给所有的 Service 方法加上 try-catch 来实现事务管理</li>
+</ul>
+</li>
+<li><p>在 web.xml 中可以使用 &lt;error-page&gt;来设置错误信息页面</p>
+</li>
+<li><p>jQuery 中的 AJAX 请求</p>
+<ul>
+<li>$.ajax 方法：url, type, data, success, dataType</li>
+<li>$.getJSON 方法：url, data, callback</li>
+</ul>
+</li>
+<li><p>i18n 国际化</p>
+<ul>
+<li>三要素：Locale对象，ResourceBundle资源包，Properties属性配置文件</li>
+<li>使用步骤：从请求头中获取 Locale 信息；根据指定的baseName 和 Locale对象，用 ResourceBundle 读取包</li>
+</ul>
+</li>
+</ol>
 
     </div>
 
@@ -292,13 +367,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/25/ROS1/" rel="prev" title="ROS环境下利用gazebo和Rviz进行Turtlebot仿真建图">
-      <i class="fa fa-chevron-left"></i> ROS环境下利用gazebo和Rviz进行Turtlebot仿真建图
+    <a href="/2020/09/25/amortized/" rel="prev" title="摊还分析(Amortized Analysis,ならし解析)">
+      <i class="fa fa-chevron-left"></i> 摊还分析(Amortized Analysis,ならし解析)
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/09/25/security/" rel="next" title="密码学入门">
-      密码学入门 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -358,7 +430,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEAndroid-Studio"><span class="nav-number">1.</span> <span class="nav-text">下载安装并配置Android Studio</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%99Android-Studio%E9%85%8D%E7%BD%AEros%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">给Android Studio配置ros环境</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-%E9%83%A8%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">HTML 部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8E%E7%AB%AF%E9%83%A8%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">后端部分</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
