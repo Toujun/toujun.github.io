@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Run Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="1.费马小定理(Fermat’s Little Theorem)假如p是质数，且gcd(a,p)&#x3D;1（a和p互质），那么 a^(p-1)  ≡ 1（mod p），即 ( a^(p-1) )%p &#x3D; 1。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="security">
+<meta property="og:url" content="http://example.com/2020/09/25/security/index.html">
 <meta property="og:site_name" content="Run Blog">
+<meta property="og:description" content="1.费马小定理(Fermat’s Little Theorem)假如p是质数，且gcd(a,p)&#x3D;1（a和p互质），那么 a^(p-1)  ≡ 1（mod p），即 ( a^(p-1) )%p &#x3D; 1。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-25T06:52:02.000Z">
+<meta property="article:modified_time" content="2020-09-25T06:55:50.670Z">
 <meta property="article:author" content="Tang Run">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2020/09/25/security/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Run Blog</title>
+  <title>security | Run Blog</title>
   
 
 
@@ -150,87 +154,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/25/amortized/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tang Run">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Run Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/25/amortized/" class="post-title-link" itemprop="url">摊还分析(Amortized Analysis,ならし解析)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-09-25 15:53:12" itemprop="dateCreated datePublished" datetime="2020-09-25T15:53:12+09:00">2020-09-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本文介绍摊还分析最常用的3种技术。</p>
-<ul>
-<li>聚合分析(aggregate method)</li>
-<li>核算法(accounting method)</li>
-<li>势能法(potential method)
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/25/amortized/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -246,10 +173,9 @@
       <meta itemprop="name" content="Run Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/25/security/" class="post-title-link" itemprop="url">security</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          security
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -271,6 +197,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -281,180 +214,56 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-费马小定理-Fermat’s-Little-Theorem"><a href="#1-费马小定理-Fermat’s-Little-Theorem" class="headerlink" title="1.费马小定理(Fermat’s Little Theorem)"></a>1.费马小定理(Fermat’s Little Theorem)</h2><p>假如p是质数，且gcd(a,p)=1（a和p互质），那么 a^(p-1)  ≡ 1（mod p），即 ( a^(p-1) )%p = 1。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/25/security/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <h2 id="1-费马小定理-Fermat’s-Little-Theorem"><a href="#1-费马小定理-Fermat’s-Little-Theorem" class="headerlink" title="1.费马小定理(Fermat’s Little Theorem)"></a>1.费马小定理(Fermat’s Little Theorem)</h2><p>假如p是质数，且gcd(a,p)=1（a和p互质），那么 a^(p-1)  ≡ 1（mod p），即 ( a^(p-1) )%p = 1。</p>
+<a id="more"></a>
+<h2 id="2-RSA算法"><a href="#2-RSA算法" class="headerlink" title="2.RSA算法"></a>2.RSA算法</h2><p>参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/jiftle/p/7903762.html">用实例给新手讲解RSA加密算法</a></p>
+<h3 id="2-1-算法步骤"><a href="#2-1-算法步骤" class="headerlink" title="2.1 算法步骤"></a>2.1 算法步骤</h3><p>（1）选择一对不同的、足够大的素数p，q<br>（2）计算n=pq<br>（3）计算f(n)=(p-1)(q-1)<br>（4）找一个与f(n)互质的数e，且1&lt;e&lt;f(n)<br>（5）计算d，使得de≡1 mod f(n)。这个公式也可以表达为d ≡e-1 mod f(n)<br>这里要解释一下，≡是数论中表示同余的符号。公式中，≡符号的左边必须和符号右边同余，也就是两边模运算结果相同。显而易见，不管f(n)取什么值，符号右边1 mod f(n)的结果都等于1；符号的左边d与e的乘积做模运算后的结果也必须等于1。这就需要计算出d的值，让这个同余等式能够成立。<br>（6）公钥KU=(e,n)，私钥KR=(d,n)<br>（7）加密时，先将明文变换成0至n-1的一个整数M。若明文较长，可先分割成适当的组，然后再进行交换。设密文为C，则加密过程为：C≡Me(mod n)<br>（8）解密过程为：M≡Cd(mod n)</p>
+<h3 id="2-2-安全性"><a href="#2-2-安全性" class="headerlink" title="2.2 安全性"></a>2.2 安全性</h3><p>密码破解的实质问题是：从Pq的数值，去求出(p-1)和(q-1)。换句话说，只要求出p和q的值，我们就能求出d的值而得到私钥。当p和q是一个大素数的时候，从它们的积pq去分解因子p和q，这是一个公认的数学难题。</p>
+<h3 id="2-3-缺点"><a href="#2-3-缺点" class="headerlink" title="2.3 缺点"></a>2.3 缺点</h3><p>(1)产生密钥很麻烦，受到素数产生技术的限制，因而难以做到一次一密。<br>(2)分组长度太大，为保证安全性，n 至少也要600 bits 以上，使运算代价很高，尤其是速度较慢，较对称密码算法慢几个数量级；且随着大数分解技术的发展，这个长度还在增加，不利于数据格式的标准化。因此，使用RSA只能加密少量数据，大量的数据加密还要靠对称密码算法。</p>
+<h2 id="3-信息安全"><a href="#3-信息安全" class="headerlink" title="3.信息安全"></a>3.信息安全</h2><p><strong>The three key concepts of information security</strong></p>
+<ul>
+<li>Confidentiality</li>
+<li>Integrity</li>
+<li>Availability</li>
+</ul>
+<p><strong>Four Great Threats</strong></p>
+<ul>
+<li>截取(Eavesdropping)</li>
+<li>模拟(Impersonation)</li>
+<li>篡改(Tampering)</li>
+<li>否认(Denial)</li>
+</ul>
+<h2 id="4-Diffie-Hellman算法"><a href="#4-Diffie-Hellman算法" class="headerlink" title="4.Diffie-Hellman算法"></a>4.Diffie-Hellman算法</h2><p>参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/qcblog/p/9016704.html">Diffie-Hellman密钥协商算法</a></p>
+<h3 id="4-1-算法步骤"><a href="#4-1-算法步骤" class="headerlink" title="4.1 算法步骤"></a>4.1 算法步骤</h3><p>(1) Alice与Bob共享一个素数p以及该素数p的本原根g（geneator），这里2⩽g⩽p−1。<br>(2) Alice产生一个私有的随机数A，满足1⩽A⩽p−1，然后计算gA mod p=Ya，将结果Ya通过公网发送给Bob；与此同时，Bob也产生一个私有的随机数B，满足1⩽B⩽p−1，计算gB mod p= Yb，将结果Yb通过公网发送给Alice。<br>(3) 此时Alice知道的信息有p,g,A,Ya，其中数字A是Alice私有的，只有她自己知道，别人不可能知道，其他三个信息都是别人有可能知道的；Bob知道的信息有p,g,B,Yb，其中数字B是Bob私有的，只有他自己知道，别人不可能知道，其他都是别人有可能知道的。<br>(4) 到目前为止，Alice和Bob之间的秘钥协商结束。<br>(5) Alice通过计算Ka=(Yb)A mod p得到秘钥Ka，同理Bob通过计算Kb=(Ya)B mod p得到秘钥Kb，此时可以证明，必然满足Ka=Kb。因此双方经过协商后得到了相同的秘钥，达成秘钥协商的目的。</p>
+<h3 id="4-2-安全性"><a href="#4-2-安全性" class="headerlink" title="4.2 安全性"></a>4.2 安全性</h3><p>使用中间人攻击(Man-in-the-Middle Attack)能够对该算法造成威胁。</p>
+
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/25/ROS2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tang Run">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Run Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/25/ROS2/" class="post-title-link" itemprop="url">Android的ROS开发环境搭建(Android+ROS+rosjava+android_core)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-09-25 15:50:38" itemprop="dateCreated datePublished" datetime="2020-09-25T15:50:38+09:00">2020-09-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ros/" itemprop="url" rel="index"><span itemprop="name">Ros</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="1-下载安装并配置Android-Studio"><a href="#1-下载安装并配置Android-Studio" class="headerlink" title="1.下载安装并配置Android Studio"></a>1.下载安装并配置Android Studio</h3><p>1.首先下载安装Android Studio和android sdk。</p>
-<p>   <a target="_blank" rel="noopener" href="http://www.android-studio.org/index.php/download">点我下载</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/25/ROS2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/25/ROS1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Tang Run">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Run Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/25/ROS1/" class="post-title-link" itemprop="url">ROS环境下利用gazebo和Rviz进行Turtlebot仿真建图</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-09-25 15:11:38" itemprop="dateCreated datePublished" datetime="2020-09-25T15:11:38+09:00">2020-09-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ros/" itemprop="url" rel="index"><span itemprop="name">Ros</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>1.首先在终端启动 roscore.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roscore</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/25/ROS1/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/25/ROS2/" rel="prev" title="Android的ROS开发环境搭建(Android+ROS+rosjava+android_core)">
+      <i class="fa fa-chevron-left"></i> Android的ROS开发环境搭建(Android+ROS+rosjava+android_core)
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/25/amortized/" rel="next" title="摊还分析(Amortized Analysis,ならし解析)">
+      摊还分析(Amortized Analysis,ならし解析) <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -507,6 +316,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86-Fermat%E2%80%99s-Little-Theorem"><span class="nav-number">1.</span> <span class="nav-text">1.费马小定理(Fermat’s Little Theorem)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-RSA%E7%AE%97%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">2.RSA算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E7%AE%97%E6%B3%95%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 算法步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%AE%89%E5%85%A8%E6%80%A7"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 安全性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E7%BC%BA%E7%82%B9"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8"><span class="nav-number">3.</span> <span class="nav-text">3.信息安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Diffie-Hellman%E7%AE%97%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">4.Diffie-Hellman算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E7%AE%97%E6%B3%95%E6%AD%A5%E9%AA%A4"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 算法步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-%E5%AE%89%E5%85%A8%E6%80%A7"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 安全性</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
