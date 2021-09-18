@@ -28,7 +28,7 @@
 <meta property="og:description" content="本文介绍符号表及其两种基本实现：无序链表和二分查找。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-18T10:45:27.000Z">
-<meta property="article:modified_time" content="2021-09-18T14:55:15.173Z">
+<meta property="article:modified_time" content="2021-09-18T15:50:21.981Z">
 <meta property="article:author" content="Tang Run">
 <meta name="twitter:card" content="summary">
 
@@ -248,7 +248,7 @@
 <li><strong>命题2</strong> 在$N$个键的有序数组中进行二分查找，最多需要 $(lgN+1)$ 次比较</li>
 </ul>
 <h4 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h4><p><strong>证明命题1</strong> 查找的复杂度$lgN$, 最坏情况下的移动需要$O(2N)$(Key[]和Value[]两个数组)，相加可得近似$～2N$。</p>
-<p><strong>证明命题2</strong> 设$C(N)$为大小为$N$的数组中查找一个键所需的比较次数。显然$C(0)=0$, $C(1)=1$, 对于$N&gt;0$，有$C(N)\leq C(\lfloor N/2 \rfloor)+1$。其中子数组的大小不会超过$\lfloor N/2 \rfloor$，加的1表示和中间元素的比较。当$N=2^n-1$时，可以得到 $C(2^n-1)\leq C(\lfloor 2^{n-1}-1 \rfloor)+1$。将等式右边的$n-1$次方缩放一次，可以得到$C(2^n-1)\leq C(2^{n-2}-1)+1+1$。重复缩放可得到$C(2^n-1)\leq C(2^0-1)+n \leq C(2^0)+n$ (因为N需要大于0)。最后的结果为$C(N)=C(2^n-1)\leq n+1 &lt;lgN+1$。结论：二分查找所需时间必然在对数范围之内。</p>
+<p><strong>证明命题2</strong> 设$C(N)$为大小为$N$的数组中查找一个键所需的比较次数。显然$C(0)=0$, $C(1)=1$, 对于$N&gt;0$，有$C(N)\leq C(\lfloor N/2 \rfloor)+1$。其中子数组的大小不会超过$\lfloor N/2 \rfloor$，加的1表示和中间元素的比较。当$N=2^n-1$时，可以得到 $C(2^n-1)\leq C(\lfloor 2^{n-1}-1 \rfloor)+1$。将等式右边的$n-1$次方缩放一次，可以得到$C(2^n-1)\leq C(2^{n-2}-1)+1+1$。重复缩放可得到$C(2^n-1)\leq C(2^0-1)+n$。最后的结果为$C(N)=C(2^n-1)\leq n = lg(N+1) &lt;lgN+1$。结论：二分查找所需时间必然在对数范围之内。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>关于符号表的基本实现，链表实现简单，但是插入和查找都在平方级。二分查找保证了查找的复杂度在对数范围，但是插入仍然较为棘手，维持在平方级。我们急需同时支持高效的查找和插入两种操作的符号表实现，这些内容将在后续文章陆续登场。</p>
 
     </div>
